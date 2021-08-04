@@ -6,6 +6,7 @@ export const Home = () => {
 
   return (
     <div>
+      {/* CASE-6 */}
       <Prompt
         when={!!name}
         message={`Are you sure you want to go to ${location.pathname}`}

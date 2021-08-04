@@ -1,18 +1,14 @@
 ﻿import * as React from "react";
-import { useLocation, useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import { rows } from "./data";
 
 export const FlightDetails = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+  // CASE-9
   const { id } = useParams();
   const data = rows.find((el) => el.id === Number(id));
 
-  console.log("pathname", pathname);
-  console.log("rows", rows);
-  console.log("id", id);
-  console.log("data", data);
   return (
     <div>
       <h2>{`Info Flight № ${id}`}</h2>
@@ -34,6 +30,7 @@ export const FlightDetails = () => {
           <div>{data.status}</div>
         </div>
       </div>
+      {/* CASE-8 */}
       <button onClick={() => navigate(-1)}>Go Back</button>
     </div>
   );

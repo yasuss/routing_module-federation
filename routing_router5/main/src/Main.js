@@ -23,6 +23,7 @@ const Page = () => {
       return <FlightsService />;
     case "redirect":
       return <RedirectPage />;
+    {/* CASE-2 */}
     case "404":
       return <Page404 />;
     default:

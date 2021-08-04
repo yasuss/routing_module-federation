@@ -28,6 +28,7 @@ export const FlightDetails = ({ id }) => {
           <div>{data.status}</div>
         </div>
       </div>
+      {/* CASE-8 */}
       <button onClick={() => setLocation("")}>Go Back</button>
     </div>
   );

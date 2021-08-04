@@ -25,6 +25,7 @@ export default function DashboardService(props) {
   const nestedBase = `${router.base}${props.path}`;
 
   return (
+    // CASE-5
     <Router base={props.path} key={nestedBase}>
       <Route path="/">
         <div>

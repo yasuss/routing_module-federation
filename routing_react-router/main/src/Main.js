@@ -20,12 +20,14 @@ const Main = () => {
         <div style={{ marginBottom: 20 }} />
 
         <React.Suspense fallback={"Loading"}>
+          {/* CASE-1 */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="dashboard/*" element={<DashboardService />} />
             <Route path="flights/*" element={<FlightsService />} />
             <Route path="redirect/*" element={<RedirectPage />} />
 
+            {/* CASE-2 */}
             <Route path="*" element={<Page404 />} />
           </Routes>
         </React.Suspense>

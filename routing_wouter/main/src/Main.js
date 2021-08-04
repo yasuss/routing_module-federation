@@ -12,6 +12,7 @@ const DashboardService = React.lazy(() => import("dashboard/DashboardService"));
 
 const LockContext = React.createContext({ lock: false });
 
+// CASE-6
 const useLocationWithConfirmation = () => {
   const [location, setLocation] = useLocation();
   const ctx = React.useContext(LockContext);
@@ -38,6 +39,7 @@ const Main = () => {
       <Divider />
       <div style={{ marginBottom: 20 }} />
 
+      {/* CASE-1 */}
       <React.Suspense fallback={"Loading"}>
         <Route path="/">
           <Home LockContext={LockContext} />
@@ -51,6 +53,7 @@ const Main = () => {
 
         <FlightsService path="/flights" />
 
+        {/* CASE-2 Doesn't work with CASE-1 */}
         {/* <Route>
             <Page404 />
           </Route> */}

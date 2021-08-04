@@ -10,9 +10,8 @@ import {
 import { Link, useLocation, useRoute } from "wouter";
 
 const ListItemLink = (props) => {
+  // CASE-7
   const [isActive] = useRoute(props.href);
-  const [location, setLocation] = useLocation();
-  console.log("ListItemLink location", location);
 
   const CustomLink = React.useMemo(
     () =>

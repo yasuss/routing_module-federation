@@ -23,6 +23,7 @@ export default function DashboardService() {
     <div>
       <TimerWidgett />
       <div style={{ marginBottom: 20 }} />
+      {/* CASE-5 */}
       <FlightsWidget />
     </div>
   );

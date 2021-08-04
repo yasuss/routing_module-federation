@@ -3,6 +3,7 @@ import { useRoute } from "react-router5";
 
 const MIGHT_REDIRECT_TO_FLIGHTS = false;
 
+// CASE-3
 export function RedirectPage() {
   const { router } = useRoute();
 

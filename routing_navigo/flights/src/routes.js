@@ -3,6 +3,7 @@
 const FlightsList = React.lazy(() => import("./FlightsList"));
 const FlightDetails = React.lazy(() => import("./FlightDetails"));
 
+// CASE-4
 export default [
   {
     path: "/flights",

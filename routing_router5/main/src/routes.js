@@ -1,5 +1,6 @@
 ﻿import { constants } from "router5";
 
+// CASE-1
 export default [
   { name: "home", path: "/" },
   {
@@ -13,5 +14,6 @@ export default [
     children: [{ name: "details", path: "/:id" }],
   },
   { name: "redirect", path: "/redirect" },
+  // CASE-2
   { name: constants.UNKNOWN_ROUTE, path: "/404" },
 ];

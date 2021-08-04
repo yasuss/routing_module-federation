@@ -5,6 +5,7 @@ export const Home = () => {
   const [name, setName] = useState("");
 
   const { router } = useRouteNode("home");
+  // CASE-6
   router.canDeactivate(
     "home",
     (router) => (toState, fromState) =>

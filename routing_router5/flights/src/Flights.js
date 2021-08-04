@@ -8,6 +8,7 @@ function Flights() {
   const { route } = useRouteNode("flights");
   const secondRouteName = route.name.split(".")[1];
 
+  // CASE-4
   switch (secondRouteName) {
     case "details":
       return <FlightDetails />;

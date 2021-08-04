@@ -10,7 +10,7 @@ import {
 import { Link, useMatch } from "react-router-dom";
 
 const ListItemLink = (props) => {
-  console.log("props", props);
+  // CASE-7
   const selected = useMatch(props.to);
   const CustomLink = React.useMemo(
     () =>

@@ -7,6 +7,7 @@ import { FlightDetails } from "./FlightDetails";
 function Flights() {
   return (
     <div>
+      {/* CASE-4 */}
       <Routes>
         <Route path="/:id" element={<FlightDetails />} />
         <Route patgh="/" element={<FlightsList />} />

@@ -6,6 +6,7 @@ import { rows } from "./data";
 export const FlightDetails = () => {
   const { router, route } = useRouteNode("flights");
   const topRouteName = route.name.split(".")[0];
+  // CASE-9
   const { id } = route.params;
   const data = rows.find((el) => el.id === id);
 
@@ -30,6 +31,7 @@ export const FlightDetails = () => {
           <div>{data.status}</div>
         </div>
       </div>
+      {/* CASE-8 */}
       <button
         onClick={() => router.navigate(`${topRouteName}`, {}, { reload: true })}
       >

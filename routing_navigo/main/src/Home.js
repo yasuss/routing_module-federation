@@ -1,17 +1,7 @@
 ﻿import React, { useState } from "react";
-import {
-  configureRouter,
-  Switch,
-  Route,
-  getRouter,
-  useLocation,
-  Base,
-} from "navigo-react";
 
 export const Home = () => {
   const [name, setName] = useState("");
-  const router = getRouter();
-  console.log("router", router);
 
   return (
     <div>

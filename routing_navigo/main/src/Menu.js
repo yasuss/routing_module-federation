@@ -15,6 +15,7 @@ function useForceUpdate() {
 
 const ListItemLink = (props) => {
   const router = getRouter();
+  // CASE-7
   const currentRouter = useLocation();
   const currentRouteName = currentRouter ? currentRouter.route.name : "";
   const selected = props.to == currentRouteName;

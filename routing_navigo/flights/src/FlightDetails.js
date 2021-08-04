@@ -5,6 +5,7 @@ import { rows } from "./data";
 
 const FlightDetails = () => {
   const { match } = useNavigo();
+  // CASE-9
   const id = match.data ? match.data.id : 1;
   const data = rows.find((el) => el.id === Number(id));
 
@@ -29,6 +30,7 @@ const FlightDetails = () => {
           <div>{data.status}</div>
         </div>
       </div>
+      {/* CASE-8 */}
       <button onClick={() => getRouter().navigateByName("flights")}>
         Go Back
       </button>

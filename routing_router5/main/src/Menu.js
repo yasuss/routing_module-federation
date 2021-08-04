@@ -10,9 +10,11 @@ import {
 import { BaseLink, useRoute, useRouteNode } from "react-router5";
 
 const ListItemLink = (props) => {
+  // CASE-7
   const { route } = useRouteNode("");
   const topRouteName = route.name.split(".")[0];
   const selected = props.name === topRouteName;
+  
   const CustomLink = React.useMemo(
     () =>
       React.forwardRef((linkProps, ref) => (
