@@ -1,5 +1,5 @@
 {
-  "name": "@routing_react-router/flights",
+  "name": "@routing_navigo/flights",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {

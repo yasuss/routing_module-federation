@@ -1,7 +1,6 @@
 {
   "packages": [
     "main",
-    "sales",
     "flights",
     "dashboard"
   ],

@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "start": "lerna run --scope @routing_react-router/* --parallel start",
-    "build": "lerna run --scope @routing_react-router/* build",
-    "serve": "lerna run --scope @routing_react-router/* --parallel serve",
-    "clean": "lerna run --scope @routing_react-router/* --parallel clean"
+    "start": "lerna run --scope @routing_router5/* --parallel start",
+    "build": "lerna run --scope @routing_router5/* build",
+    "serve": "lerna run --scope @routing_router5/* --parallel serve",
+    "clean": "lerna run --scope @routing_router5/* --parallel clean"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "name": "routing_react-router"
+  "name": "routing_router5"
 }
