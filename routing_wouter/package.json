@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "lerna run --scope @routing_wouter/* --parallel start",
+    "build": "lerna run --scope @routing_wouter/* build",
+    "serve": "lerna run --scope @routing_wouter/* --parallel serve",
+    "clean": "lerna run --scope @routing_wouter/* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "name": "routing_wouter"
+}
